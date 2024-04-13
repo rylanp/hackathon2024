@@ -110,8 +110,8 @@ body{
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    width: 100px;
-    height: 100px;
+    width: 10px;
+    height: 10px;
     border: 5px solid;
     border-radius: 20px;
     border-color: rgb(38, 38, 38);

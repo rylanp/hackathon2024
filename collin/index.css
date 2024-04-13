@@ -21,4 +21,22 @@ body{
 #Title{
     color: var(--darkblue);
     animation: RPAnim 4s ease-in-out 0s infinite;
+    text-align: center;
+}
+/*graph*/
+.graph {
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: auto;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*button*/
+button {
+    border: none;
+    appearance: none;
 }

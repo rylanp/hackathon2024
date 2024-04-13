@@ -10,53 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-    <script src="avatar.js"></script>
 </head>
 <body>
     <div class="header">
         <div id="Title"><p>Profile</p></div>
         <div class="avatar">
-            <img src="/profile/avatars/avatar2.png" class="avatar-char">
-            <img src="/profile/faces/face1.png">
+            <img class="avatar-char" src="/profile/avatars/avatar2.png" id="avatar_img">
+            <img src="/profile/faces/face1.png" id="face_img">
         </div>
     </div>
     <div class="avatar-creation">
         <h2 style="padding: 10px;">Avatar</h2>
-        <div class="avatar-selector">
-            <button class="avatar-option">
-                <img src="/profile/avatars/avatar1.png">
-            </button>
-            <button class="avatar-option">
-                <img src="/profile/avatars/avatar2.png">
-            </button>
-            <button class="avatar-option">
-                <img src="/profile/avatars/avatar3.png">
-            </button>
-            <button class="avatar-option">
-                <img src="/profile/avatars/avatar4.png">
-            </button>
-            <button class="avatar-option">
-                <img src="/profile/avatars/avatar5.png">
-            </button>
+        <div class="avatar-selector" id="character">
         </div>
-        <div class="avatar-selector">
-            <button class="avatar-option">
-                <img src="/profile/faces/face1.png">
-            </button>
-            <button class="avatar-option">
-                <img src="/profile/faces/face2.png">
-            </button>
-            <button class="avatar-option">
-                <img src="/profile/faces/face3.png">
-            </button>
-            <button class="avatar-option">
-                <img src="/profile/faces/face4.png">
-            </button>
-            <button class="avatar-option">
-                <img src="/profile/faces/face5.png">
-            </button>
+        <div class="avatar-selector" id="colors">
+        </div>
+        <div class="avatar-selector" id="face">
         </div>
     </div>
 
+    <div class="backbtn">
+        <a href="/collin/index.html">Back</a>
+    </div>
+    <script src="avatar.js"></script>
 </body>
 </html>

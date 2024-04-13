@@ -36,7 +36,38 @@ body{
     margin-right: auto;
 }
 /*button*/
-button {
+.butt {
     border: none;
     appearance: none;
+    background-color: inherit;
+    transition: all 0.1s ease-in-out;
+}
+.butt:active {
+    scale: .8;
+    opacity: .9;
+}
+.butt2 {
+    height: 35px;
+    width: 35px;
+    margin: 5px;
+}
+.butt2:active {
+    scale: .8;
+    opacity: .9;
+}
+.navbar{
+    background-color: darkgray;
+    overflow: hidden;
+}
+.mr-2 {
+    width: 30%;
+    height: auto;
+    margin: 5px;
+}
+.prof {
+    float: right;
+}
+.prof:active {
+    scale: .8;
+    opacity: .9;
 }

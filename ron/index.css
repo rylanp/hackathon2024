@@ -1,0 +1,28 @@
+/* Variables */
+:root {
+    --title1: #5B85AA;
+    --title2: #b85ab1;
+    --bg: #1d1d1e;
+}
+/* All */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Body */
+body{
+    background-color: var(--bg);
+}
+/* Title */
+#Title{
+    color: var(--title1);
+    animation: RPAnim 4s ease-in-out 0s infinite;
+}
+@keyframes RPAnim {
+    100%,0%{
+        color: var(--title1);
+    }
+    50%{
+        color: var(--title2);
+    }
+}

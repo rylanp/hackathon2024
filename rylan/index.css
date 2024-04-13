@@ -4,7 +4,7 @@
     --darkblue: #0c2340;
     --lightblue: #DFF8EB;
     --bg: #FFBC85;
-    --avatarcolor: #64f5dd;
+    --avatarcolor: #f56494;
 }
 /* All */
 *{
@@ -13,7 +13,7 @@
 }
 /* Body */
 body{
-    background-color: var(--shamrock);
+    background-color: var(--lightblue);
     height: 100vh;
     color: var(--darkblue);
     font-family: "Quicksand", sans-serif; /* This is how you pick quick sands*/

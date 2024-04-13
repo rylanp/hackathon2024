@@ -1,9 +1,9 @@
 // Get the computed style of the container element to access its color variable
 var avatar_src = "'/profile/avatars/avatar1.png'";
 var avatar_face_src = "/profile/faces/face1.png";
-var avatar_color = "#fa70fc";
+var avatar_color = "#f56494";
 var rgb = hexToRgb(avatar_color);
-var colors = ["#fa70fc", "#eb4b4b", "#4beb5e", "#4b78eb", "#d6eb4b", "#b64beb", "#eb904b"];
+var colors = ["#f56494", "#eb4b4b", "#4beb5e", "#4b78eb", "#d6eb4b", "#b64beb", "#eb904b"];
 var faceimgs = [
     '/profile/faces/face1.png',
     '/profile/faces/face2.png',

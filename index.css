@@ -12,6 +12,9 @@
 /* Body */
 body{
     background-color: var(--bg);
+    font-family: "Quicksand", sans-serif; /* This is how you pick quick sands*/
+    font-weight: 400;/* 300 - 700: 400 is normal */ 
+    font-style: normal;/* options are normal and italic */
 }
 /* Title */
 #Title{

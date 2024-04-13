@@ -1,7 +1,9 @@
 /* Variables */
 :root {
-    --title1: #5B85AA;
-    --bg: #1d1d1e;
+    --shamrock: #499F68;
+    --darkblue: #0c2340;
+    --lightblue: #DFF8EB;
+    --bg: #FFBC85;
 }
 /* All */
 *{
@@ -11,6 +13,7 @@
 /* Body */
 body{
     background-color: var(--bg);
+    color: var(--darkblue);
     font-family: "Quicksand", sans-serif; /* This is how you pick quick sands*/
     font-weight: 400;/* 300 - 700: 400 is normal */ 
     font-style: normal;/* options are normal and italic */
@@ -18,4 +21,5 @@ body{
 /* Title */
 #Title{
     color: var(--title1);
+    font-size: 1000%;
 }

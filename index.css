@@ -1,8 +1,9 @@
 /* Variables */
 :root {
-    --title1: #5B85AA;
-    --title2: #b85ab1;
-    --bg: #1d1d1e;
+    --shamrock: #499F68;
+    --darkblue: #011638;
+    --lightblue: #DFF8EB;
+    --bg: #FFBC85;
 }
 /* All */
 *{
@@ -20,9 +21,6 @@ body{
 #Title{
     color: var(--title1);
     animation: RPAnim 4s ease-in-out 0s infinite;
-    font-family: "Quicksand", sans-serif; /* This is how you pick quick sands*/
-    font-weight: 400;/* 300 - 700: 400 is normal */ 
-    font-style: normal;/* options are normal and italic */
 }
 @keyframes RPAnim {
     100%,0%{

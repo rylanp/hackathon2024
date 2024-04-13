@@ -1,8 +1,9 @@
 /* Variables */
 :root {
-    --title1: #5B85AA;
-    --title2: #b85ab1;
-    --bg: #ffbc85;
+    --shamrock: #499F68;
+    --darkblue: #0c2340;
+    --lightblue: #DFF8EB;
+    --bg: #FFBC85;
 }
 /* All */
 *{
@@ -18,14 +19,6 @@ body{
 }
 /* Title */
 #Title{
-    color: var(--title1);
+    color: var(--darkblue);
     animation: RPAnim 4s ease-in-out 0s infinite;
-}
-@keyframes RPAnim {
-    100%,0%{
-        color: var(--title1);
-    }
-    50%{
-        color: var(--title2);
-    }
 }

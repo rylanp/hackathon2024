@@ -1,8 +1,3 @@
-// Get the computed style of the container element to access its color variable
-var avatar_src = "'/profile/avatars/avatar1.png'";
-var avatar_face_src = "/profile/faces/face1.png";
-var avatar_color = "#f56494";
-var rgb = hexToRgb(avatar_color);
 var colors = ["#f56494", "#eb4b4b", "#4beb5e", "#4b78eb", "#d6eb4b", "#b64beb", "#eb904b"];
 var faceimgs = [
     '/profile/faces/face1.png',
@@ -19,6 +14,29 @@ var avatarimgs = [
     '/profile/avatars/avatar5.png'
 ];
 
+var avatar_color = sessionStorage.getItem("color");
+if (avatar_color === null) {
+    avatar_color = colors[1];
+    sessionStorage.setItem("color", avatar_color);
+}
+var rgb = hexToRgb(avatar_color);
+var avatar_src = sessionStorage.getItem("char_img");
+if (avatar_src === null) {
+    avatar_src = "/profile/avatars/avatar1.png";
+    sessionStorage.setItem("char_img", avatar_src);
+}
+var avatar_face_src = sessionStorage.getItem("face_img");
+if (avatar_face_src === null) {
+    avatar_face_src = "/profile/faces/face1.png";
+    sessionStorage.setItem("face_img", avatar_face_src);
+}
+
+var prof_char = document.getElementById("avatar_img");
+var prof_face = document.getElementById("face_img");
+prof_char.src = avatar_src;
+prof_face.src = avatar_face_src;
+
+
 var color_parent = document.getElementById("colors");
 
 for (let index = 0; index < colors.length; index++){
@@ -28,6 +46,7 @@ for (let index = 0; index < colors.length; index++){
     color_parent.appendChild(d);
     d.addEventListener('click', function() {
         // Your click event handler code goes here
+        sessionStorage.setItem("color", colors[index]);
         var c = colors[index];
         console.log(c);
         avatar_color = c;
@@ -51,6 +70,7 @@ for (let index = 0; index < avatarimgs.length; index++){
 
     d.addEventListener('click', function() {
         // Your click event handler code goes here
+        sessionStorage.setItem("char_img", avatarimgs[index]);
         avatar_src = avatarimgs[index];
         setProfileImage(avatar_src, avatar_face_src);
         for (var x = 0; x < avatars.length; x++) {
@@ -70,6 +90,7 @@ for (let index = 0; index < faceimgs.length; index++){
 
     d.addEventListener('click', function() {
         // Your click event handler code goes here
+        sessionStorage.setItem("face_img", faceimgs[index]);
         avatar_face_src = faceimgs[index];
         setProfileImage(avatar_src, avatar_face_src);
         for (var x = 0; x < avatars.length; x++) {

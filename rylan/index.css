@@ -113,13 +113,13 @@ body{
     width: 10px;
     height: 10px;
     border: 5px solid;
-    border-radius: 20px;
+    border-radius: 15%;
     border-color: rgb(38, 38, 38);
 }
 .avatar img {
     position: absolute;
     top: 50%;
-    transform: translateX(5%) translateY(-40%);
+    transform: translateX(5%) translateY(-43%);
     display: table-cell;
     width: 90%;
     height: 90%;
@@ -127,7 +127,6 @@ body{
     overflow: hidden;
     z-index: -100;
 }
-.avatar-char {
+.avatar-char{
     z-index: -1;
-    filter: hue-rotate(hsl(var(--avatarcolor))deg);
 }

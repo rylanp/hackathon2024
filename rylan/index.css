@@ -4,6 +4,7 @@
     --darkblue: #0c2340;
     --lightblue: #DFF8EB;
     --bg: #FFBC85;
+    --avatarcolor: #64f5dd;
 }
 /* All */
 *{
@@ -12,14 +13,121 @@
 }
 /* Body */
 body{
-    background-color: var(--bg);
+    background: linear-gradient(55deg,var(--bg),var(--shamrock),var(--shamrock), var(--darkblue));
+    animation: bgGradient 10s ease-in-out infinite;
+    background-attachment: fixed;
+    background-size: 150% 150%;
+    height: 100vh;
     color: var(--darkblue);
     font-family: "Quicksand", sans-serif; /* This is how you pick quick sands*/
     font-weight: 400;/* 300 - 700: 400 is normal */ 
     font-style: normal;/* options are normal and italic */
 }
+@keyframes bgGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    45% {
+        background-position: 100% 0%;
+    }
+    55% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
 /* Title */
+.header{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.avatar-creation{
+    background-color: #001e4500;
+}
 #Title{
-    color: var(--title1);
-    font-size: 1000%;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 50px;
+}
+#Title p{
+    position: absolute; /* Add this */
+    top: 50%; /* Add this */
+    transform: translateY(-50%); /* Add this */
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    margin: auto;
+    color: var(--darkblue);
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+}
+.avatar-selector {
+    padding: 10px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+.avatar-option {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 5px solid;
+    border-radius: 20px;
+    border-color: rgb(38, 38, 38);
+    transition: all 0.1s;
+}
+.avatar-option img {
+    position: absolute;
+    top: 50%;
+    transform: translateX(5%) translateY(-40%);
+    display: table-cell;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: -100;
+}
+.avatar-option img:active {
+    z-index: -100;
+}
+.avatar-option:active {
+    border-color: rgb(239, 229, 43);
+}
+.avatar {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border: 5px solid;
+    border-radius: 20px;
+    border-color: rgb(38, 38, 38);
+}
+.avatar img {
+    position: absolute;
+    top: 50%;
+    transform: translateX(5%) translateY(-40%);
+    display: table-cell;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: -100;
+}
+.avatar-char {
+    z-index: -1;
+    filter: hue-rotate(hsl(var(--avatarcolor))deg);
 }

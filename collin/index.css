@@ -12,7 +12,7 @@
 }
 /* Body */
 body{
-    background-color: var(--lightblue);
+    background-color: var(--bg);
     font-family: "Quicksand", sans-serif; /* This is how you pick quick sands*/
     font-weight: 400;/* 300 - 700: 400 is normal */ 
     font-style: normal;/* options are normal and italic */
@@ -69,7 +69,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: gray;
+    background-color: var(--lightblue);
     height: 100%;
     width: 100%;
     z-index: -100;
@@ -121,7 +121,7 @@ table {
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #737373;
 }
 tr:nth-child(odd) {
     background-color: rgb(161, 161, 161);

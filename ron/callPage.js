@@ -37,11 +37,11 @@ document.addEventListener("DOMContentLoaded", function() {
             circleFill.style.fill = `hsl(${120 * percentageElapsed}, 75%, 50%)`;
 
             // Check if 118 seconds have elapsed
-            if (secondsLeft <= 30 && secondsLeft > 20) {
+            if (secondsLeft <= 30 && secondsLeft > 26) {
                 alert118Element.style.opacity = 1;
             }
 
-            if (secondsLeft <= 15) {
+            if (secondsLeft <= 24) {
                 alert118Element.style.opacity = 0;
             }
 

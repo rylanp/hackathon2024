@@ -13,12 +13,13 @@
 }
 /* Body */
 body{
-    background-color: var(--lightblue);
+    background-color: var(--bg);
     height: 100vh;
     color: var(--darkblue);
     font-family: "Quicksand", sans-serif; /* This is how you pick quick sands*/
     font-weight: 400;/* 300 - 700: 400 is normal */ 
     font-style: normal;/* options are normal and italic */
+    overflow: hidden;
 }
 /* Title */
 .header{
@@ -28,9 +29,18 @@ body{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-style: none none dotted none;
+    border-width: 10px;
+    border-color: #2323238a;
 }
-.avatar-creation{
-    background-color: #001e4500;
+.avatar-creation span{
+    position: absolute;
+    display: block;
+    transform: translate(0%, 11%);
+    width: 100%;
+    height: 44%;
+    z-index: -2;
+    background-color: #6c6c6c8a;
 }
 #Title{
     position: relative;
@@ -81,11 +91,11 @@ body{
     height: 90%;
     object-fit: cover;
     overflow: hidden;
-    z-index: -100;
+    z-index: -1;
     image-resolution: 300dpi;
 }
 .avatar-option img:active {
-    z-index: -100;
+    z-index: -1;
 }
 .avatar-option:active {
     border-color: rgb(239, 229, 43);
@@ -109,7 +119,7 @@ body{
     height: 90%;
     object-fit: cover;
     overflow: hidden;
-    z-index: -100;
+    z-index: -1;
     image-resolution: 300dpi;
 }
 .avatar-char{
@@ -119,14 +129,15 @@ body{
 .backbtn {
     margin-left: 25px;
     margin-top: 50px;
-    background-color: var(--darkblue);
+    background-color: var(--shamrock);
     border-radius: 15px 15px 15px 15px;
-    width: 120px;
-    font-size: 40px;
+    width: 150px;
+    font-size: 42px;
     text-align: center;
     font-weight: 500;
+    padding: 5px;
 }
 .backbtn a{
-    color: var(--shamrock);
+    color: var(--darkblue);
     text-decoration: none;
 }

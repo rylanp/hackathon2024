@@ -121,13 +121,13 @@ table {
 }
 
 tr:nth-child(even) {
-    background-color: #737373;
+    background-color: #00000045;
 }
 tr:nth-child(odd) {
-    background-color: rgb(161, 161, 161);
+    background-color: #00000029;
 }
 th {
-    background-color: goldenrod;
+    background-color: var(--shamrock);
 }
 .butt3 {
     border-style: solid;

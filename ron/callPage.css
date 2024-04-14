@@ -23,6 +23,7 @@ body{
     font-style: normal;/* options are normal and italic */
     width: 100%;
     justify-content: center;
+    overflow: hidden;
 }
 /* Title */
 #Title{
@@ -71,7 +72,20 @@ body{
     fill: #4caf50; /* Fill color for the circle (initially green) */
     stroke: none;
     transition: fill 1s linear; /* Smooth transition for fill color */
-    
+    animation: timer_anim 5s ease-in-out 0s infinite;
+    scale: 0.9;
+    transform-origin: center;
+}
+@keyframes timer_anim {
+    0%{
+        scale: 0.9;
+    }
+    50% {
+        scale: 1.1;
+    }
+    100%{
+        scale: 0.9;
+    }
 }
 
 .timer {
@@ -84,42 +98,41 @@ body{
     z-index: 1; /* Ensure the timer is above the circle */
 
 }
-
-.alert30Sec {
+.alert30sec {
     font-size: 24px;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #f44336;
     color: white;
     padding: 15px;
+    width: 250px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 9999;
-    opacity: 1; /* Set initial opacity to 1 to make it visible */
+    opacity: 0; /* Set initial opacity to 1 to make it visible */
     transition: opacity 0.5s ease;
 }
+
 
 /* For the tips */
 .alertTip {
     font-size: 24px;
     position: absolute;
-    top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    top: 60%;
+    width: 80%;
     background-color: #f44336;
     color: white;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 9999;
-    opacity: 1; /* Set initial opacity to 1 to make it visible */
-    transition: opacity 0.5s ease;
-}
-
-.alert.show {
-    opacity: 1;
+    opacity: 0; /* Set initial opacity to 1 to make it visible */
+    transition: 0.8s ease-in-out;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-in-out;
 }
 
 .hang-up-button {
@@ -147,20 +160,13 @@ body{
 
 .input-box {
     text-align: center;
-    margin-top: 500px;
+    margin-top: 560px;
 }
 
 .input-box textarea {
     width: 300px; /* Adjust the width as needed */
-    height: 120px; /* Adjust the height as needed */
+    height: 130px; /* Adjust the height as needed */
     padding: 10px; /* Add padding for better visual appearance */
     font-size: 18px; /* Adjust the font size as needed */
     resize: vertical; /* Allow vertical resizing */
-}
-
-.joe{
-    position: fixed;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }

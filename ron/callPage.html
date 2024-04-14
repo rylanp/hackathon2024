@@ -15,14 +15,12 @@
 
 <body>
     <div id = "Title"> 
-        <h1 style = "text-align: center;">TIP!</h1>
-        <div class = "alertTip">Ask what their favorite spot is on campus!</div>
+        <h1 style = "text-align: center;">FrieNDme</h1>
     </div>
 
     <!-- Circle that fills up behind timer -->
     <div class="circle-container">
         <svg class="circle-svg" width="100" height="100" viewBox="0 0 200 200">
-            <circle class="circle-bg" cx="100" cy="100" r="80"></circle>
             <circle class="circle-fill" cx="100" cy="100" r="80"></circle>
         </svg>
     </div>
@@ -30,31 +28,21 @@
     <!-- Timer -->
     <div class="timer" id="timer">2:00</div>
 
-    <!-- Above text box -->
-    <div class="joe"> 
-        <h1 style = "text-align: center;background-color: blueviolet;">TIP 2!</h1>
-    </div>
-
     <!-- Input Box -->
     <div class="input-box">
-        <textarea placeholder="Enter your message here..." rows="4"></textarea>
+        <textarea placeholder="Enter your notes here..." rows="4"></textarea>
     </div>
-
-    
-
-
-
-
 
     <!-- Hidden alert -->
 
-    <div id="alert-118" class="alert30Sec" style="display: none;">
-        30 seconds remaining!
+    <div id="alert-118" class="alert30sec">
+        <p>30 seconds remaining!</p>
     </div>
+    <div class="alertTip" id="tip">Ask what their favorite spot is on campus!</div>
 
     <!-- Hang up -->
 
-    <button class="hang-up-button left">Hang Up</button>
+    <div class="hang-up-button left"><a href="/index.html" style="color: inherit; text-decoration: none;">Hang Up</a></div>
 
     <!-- Extend -->
     <button id="addTimeButton" class="hang-up-button right"> Extend 1 Minute</button>

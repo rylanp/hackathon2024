@@ -9,7 +9,8 @@ const phrases = [
     "What is something you enjoy?",
     "What sports do you play?",
     "What hobbies do you have?",
-    "What is your hoetown like?"
+    "What is your deepest, darkest fear?",
+    "What is your hometown like?"
 ]
 
 
